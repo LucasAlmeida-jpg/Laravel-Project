@@ -1,3 +1,7 @@
 * {
     font-family: 'Roboto';
 }
+
+ul  li{
+    margin: 12px;
+}
