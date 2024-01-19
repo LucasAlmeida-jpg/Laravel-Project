@@ -3,7 +3,7 @@
 @section('title', 'Events HDC')
 @section('content')
 
-<div class="container">
+<div>
     <div id="search-container" class="col-md-12">
         <h1>Busque um evento</h1>
         <form action="">
@@ -13,11 +13,19 @@
     
     <div id="events-container" class="col-md-12">
         <h2>Proximos Eventos</h2>
-        <p>Veja os eventos dos proximos dias</p>
+        <p class="subtitle">Veja os eventos dos proximos dias</p>
         <div id="cards-container" class="row">
             @foreach ($events as $event)
                 <div class="card col-md-3">
-                    <img src="" alt="">
+                    <img src="https://cdn.icon-icons.com/icons2/2528/PNG/512/profile_user_icon_151793.png" alt="{{$event->title}}">
+                    <div class="card-body">
+                    <p class="card-date">
+                        10/09/2023
+                    </p>
+                    <h5 class="card-title">{{$event->title}}</h5>
+                    <p class="card-participants">X participantes</p>
+                    <a href="" class="btn btn-primary">Saber Mais</a>
+                    </div>
                 </div>
             @endforeach
         </div>
