@@ -22,6 +22,16 @@ header {
     padding: 0;
 }
 
+.msg{ 
+    background-color: #d4edda;
+    color: black;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 20px;
+}
+
 .btn-primary {
     background-color: #F2A340;
     border: 2px solid #C28008;
